@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    username: root
+    password: 9603
+    url: jdbc:mysql://localhost:3306/miniproject1
+    dbcp2:
+      driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+plan-api:
+ messages:
+  planSaveSucc: Plan Saved Successfully
+  planSaveFail: Plan Save failed
+  planUpdateSucc: Plan updated Sucesfuly
+  planUpdateFail: Plan update Failed
+  planDeleteSucc: Plan Deleted Succesfully
+  planDeleteFail: Plan Delete failed
+  planStatusChange: Plan Status Changed succesfully
+  planStatusChangeFail: Plan Status change Failed
